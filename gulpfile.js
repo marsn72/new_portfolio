@@ -10,5 +10,5 @@ gulp.task('pug', ()=>{
 });
 
 gulp.task('watch', ()=>{
-  gulp.watch('./src/**/*.pug', ['pug'])
+  gulp.watch('./src/**/*.pug', gulp.series('pug'))
 });
